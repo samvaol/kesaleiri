@@ -1,3 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--tausta);
+  height: auto; /* Set height to auto */
+}
+
+html {
+  height: auto; /* Set height to auto */
+}
+
+#root {
+  width: 100%; /* Remove height and width rules */
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @media (prefers-color-scheme: dark) {
   :root {
       --tausta: #000000;
@@ -7,7 +32,7 @@
       --varvunvihrea: #008D37;
       --iltaruskonpunainen: #DA2525;
       --vaaleansininen: #28AAE1;
-      --foreground: #1a2b38;
+      /*--foreground: #1a2b38;*/
       --onforeground: #f2f2f2;
       --leipateksti: #fff;
       --onbackground: #fff;
@@ -120,7 +145,7 @@ a:hover {
     margin: 20px;
     overflow: hidden;
 }
-
+/*
 body {
   margin: 0;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -135,34 +160,6 @@ html, body, #root {
   height: 100%;
   width: 100%;
 }
+*/
 
-.header {
-  height: 50%;
-  background-color: var(--leirikeltainen); 
-}
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 1%;
-}
-
-.navbar li {
-  margin: 0 10px;
-  text-align: right;
-}
-
-.navbar a {
-  color: var(--varvunvihrea);
-  text-decoration: none;
-  font-size: 18px;
-  font-family: "Passion One";
-}

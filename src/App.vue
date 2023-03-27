@@ -1,19 +1,23 @@
 <template>
-  <div id="app">
-    <navbar></navbar>
+  <div>
+    <Header />
+    <FrontPage />
   </div>
 </template>
 
 <script>
-import Navbar from './components/navbar.vue'
+import Header from './components/Header.vue'
+import FrontPage from './components/FrontPage.vue'
 
 export default {
-  name: 'App',
   components: {
-    Navbar
+    Header,
+    FrontPage
   }
 }
 </script>
+
+
 
 
 <link rel="stylesheet" href="./assets/main.css">
