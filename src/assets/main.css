@@ -1,0 +1,168 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+      --tausta: #000000;
+      --mannynvihrea: #44D537;
+      --mansikanpunainen: #FF7364;
+      --partionsininen: #253764;
+      --varvunvihrea: #008D37;
+      --iltaruskonpunainen: #DA2525;
+      --vaaleansininen: #28AAE1;
+      --foreground: #1a2b38;
+      --onforeground: #f2f2f2;
+      --leipateksti: #fff;
+      --onbackground: #fff;
+      --onbackground-surface: #000;
+      --leirikeltainen: #d19f2a;
+      --leiritummanpunainen: #c22033;
+      --leirivaaleampipunainen: #ea1d2d;
+      --leirivaaleansininen: #00add8;
+      --leirivihreä: #2d9a47;
+      --leiritummanpunainen2: #8f1838;
+      --leiritummansininen: #1a3668;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      --tausta: #ece9e9;
+      --mannynvihrea: #008D37;
+      --mansikanpunainen: #DA2525;
+      --partionsininen: #253764;
+      --varvunvihrea: #44D537;
+      --iltaruskonpunainen: #FF7364;
+      --vaaleansininen: #28AAE1;
+      --leipateksti: #133713;
+      --foreground: #fff;
+      --onforeground: #4a4949;
+      --onbackground: #2f2d2d;
+      --onbackground-surface: #fff;
+      --leirikeltainen: #d19f2a;
+      --leiritummanpunainen: #c22033;
+      --leirivaaleampipunainen: #ea1d2d;
+      --leirivaaleansininen: #00add8;
+      --leirivihreä: #2d9a47;
+      --leiritummanpunainen2: #8f1838;
+      --leiritummansininen: #1a3668;
+  }
+}
+
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./PassionOne-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./Poppins-Regular.woff) format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Passion One', serif;
+  text-transform: uppercase;
+  color: var(--mannynvihrea);
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin: 4px;
+}
+
+hr {
+  border-top: 1px dashed var(--mannynvihrea);
+  border-bottom: 1px dashed var(--mannynvihrea);
+}
+
+*:not(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Poppins', serif;
+  color: var(--leipateksti);
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--mannynvihrea);
+}
+
+
+.nummarit-button {
+  background: var(--vaaleansininen);
+  border-radius: 40px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none; /* Remove the border around the button */
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-transform: uppercase;
+  transition: all .2s
+}
+
+.nummarit-button:hover {
+  background: var(--partionsininen);
+  color: #fff!important
+}
+.nummarit-card {
+    background-color: var(--foreground);
+    color: var(--onforeground) !important;
+    border-radius: 20px;
+    display: flex;
+}
+
+.nummarit-card > content {
+    flex: 1;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--tausta);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  height: 50%;
+  background-color: var(--leirikeltainen); 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1%;
+}
+
+.navbar li {
+  margin: 0 10px;
+  text-align: right;
+}
+
+.navbar a {
+  color: var(--varvunvihrea);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Passion One";
+}

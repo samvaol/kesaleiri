@@ -1,0 +1,52 @@
+
+.nummarit-button {
+  background: var(--vaaleansininen);
+  border-radius: 40px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none; /* Remove the border around the button */
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-transform: uppercase;
+  transition: all .2s
+}
+
+.nummarit-button:hover {
+  background: var(--partionsininen);
+  color: #fff!important
+}
+.nummarit-card {
+    background-color: var(--foreground);
+    color: var(--onforeground) !important;
+    border-radius: 20px;
+    display: flex;
+}
+
+.nummarit-card > content {
+    flex: 1;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--tausta);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
