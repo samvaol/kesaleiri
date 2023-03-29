@@ -16,7 +16,7 @@
           <a href="#">Yhteystiedot</a>
         </li>
         <li class="nav-item">
-          <a href="#">Yhteystiedot</a>
+          <a href="#"></a>
         </li>
       </ul>
     </nav>
@@ -41,6 +41,12 @@
   
   .nav-item:first-child {
     margin-left: 0;
+  }
+
+  .a {
+  font-family: 'Poppins-bold';
+  color: var(--leipateksti);
+  font-weight: 400;
   }
   </style>
   

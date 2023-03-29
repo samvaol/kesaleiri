@@ -32,7 +32,7 @@ html {
       --varvunvihrea: #008D37;
       --iltaruskonpunainen: #DA2525;
       --vaaleansininen: #28AAE1;
-      /*--foreground: #1a2b38;*/
+      --foreground: #1a2b38;
       --onforeground: #f2f2f2;
       --leipateksti: #fff;
       --onbackground: #fff;
@@ -84,6 +84,14 @@ html {
   font-weight: normal;
   src: url(./Poppins-Regular.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'Poppins-bold';
+  font-style: bold;
+  font-weight: normal;
+  src: url(./Poppins-Bold.ttf) format('ttf');
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Passion One', serif;
